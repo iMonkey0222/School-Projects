@@ -1,6 +1,8 @@
 # School-Projects
 Projects Finished in Y2-S1 will be listed under the follwing directory:
 1. Cloud Computing
+\t 
+<br/>
 There are 3 main projects related to data processing:
 	A1. MapReduce Hadoop Project. 
 	A2. Processing data with platform Flink
