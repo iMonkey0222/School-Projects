@@ -7,14 +7,13 @@ There are 3 main projects related to **Big Data Processing**:
 * Proejct 2 -- Processing data with platform Flink
 * Project 3 -- Processing data with platform Spark
 
-<br/>
 	* Programming Language: Python
 	* *Hadoop HDFS* was used as filesystem to store large data sets.
 	* *Hadoop YARN* was used as resource manager in above projects.
 	* *Microsoft Azure* was also used to create cluster to run the above projects in Demo.
 
 ## 2. Machine Learning and Data Mining
-* Project 1 -- Classifying the given dataset with self defined Navie Bayes Classfier (not allowed to using external library).
+* Project 1 -- Classifying the given dataset with self defined Navie Bayes Classfier (not allowed to use external library).
 * Project 2 -- Using 3 methods to classify the Cifar10 (vision dataset).
 	* Method 1: Adaboost
 	* Method 2: Random Forest
