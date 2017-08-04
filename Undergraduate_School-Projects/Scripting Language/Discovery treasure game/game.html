@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Treasure Game</title>
+
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="icon.ico">
+
+  <script type="text/javascript">
+  var size;               // the size of the grid
+  var browser = navigator.appName; // get brwoser name
+  var isIE = false;       // isIE is false
+  var canSetUp = true;    // at the begining,is able to set up
+  var setRob = false;     // user robot is not set 
+  var ableToPlay = false; // at the begining,is not able to play
+  var confirmSetting = false;// comfirmSetting button is not clicked
+  var roundContainer, USContainer, CSContainer;
+  var images = new Array();// images array
+  var round = 0;           // initialize round to 0
+  var URscore=0;           // initialize user robot score to 0
+  var CRscore=0;           // initialize computer robot score to 0
+  
+  // This function is used to create grid table with user-defined size
+  function gridsMap(size){
+    this.size = size;
+    var id_value=0;
+    document.writeln("<table bgcolor='#FFDABF' border='0'>");
+    for (var x = 0; x <= size-1; x++) {
+      document.writeln("<tr>");
+      for (var y = 0; y <= size-1; y++) {
+        id_value =id_value+1;
+        document.writeln('<td>')
+        // tabel data: a link in “grid-cell” style with unique id, and execute function setUp() when it is clicked by using <a> tag 
+        document.writeln('<a class="grid-cell" id="'+id_value+'" onclick="setUp(this)";></a>')
+        document.writeln('</td>');
+      }
+      document.writeln("</tr>");
+    }
+    document.writeln("</table>");
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Discover Treasure</h1>
+    <div class="round-container">0</div>
+    <div class="score-container">0</div>
+    <div class="computer-container">0</div>
+
+    <div class="above-game">
+      <p class="game-intro">Move your robot to discover <strong>treasures</strong> in grid!<br /><strong>A</strong>: move left  <strong>D</strong>: move right<br /><strong>W</strong>: move up  <strong>X</strong>: move down.<br />Created by <strong>Xiaoyang Wang </strong><br /> Department ID: x3xw1 </p>
+      <button class="menu-button" onclick ="endGame()">End Game</button>
+      <button class="menu-button" onclick ="endSetUp()">Confirm Setting</button>
+    </div>
+
+    <script type="text/javascript">
+      gridsMap(10); //create grid here
+    </script>
+  </div>
+<!--Point to external Javascript files: the URL of the file is the src attribute-->
+  <script src="js/init.js"></script>
+  <script src="js/set_up.js"></script>
+  <script src="js/play.js"></script>
+  <script src="js/userRobTurn.js"></script>
+  <script src="js/comRobTurn.js"></script>
+  <script src="js/end_Game.js"></script>
+
+  <script type="text/javascript">
+  function checkBrowser(){
+  if (this.browser =='Microsoft Internet Explorer') {this.isIE = true}
+  }
+ // html selector
+  function containerSelector(){
+    this.roundContainer = document.querySelector(".round-container");
+    this.USContainer = document.querySelector(".score-container");
+    this.CSContainer = document.querySelector(".computer-container");
+  }
+  </script>
+</body>
+</html>
