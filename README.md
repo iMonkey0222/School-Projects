@@ -2,9 +2,12 @@
 # 学校项目
 ## 1.云计算项目：大数据处理
 分别用**MapReduce, Flink, Spark**进行大数据处理。
-* 项目一：用Hadoop MapReduce来分析提供好的来自flickr.com的照片信息数据，获得关于数据集的总结性信息如每个地区的照片数量、Top50的地区、在前50个地区中每个地区最流行的10个标签。
-* 项目二：用Flink处理分析流式细胞的数据集从而研究对于流感的免疫反应，分析任务包括每个研究者的有效的测量值数量、用k-means集群细胞测量值、异常值去除及再次集群。
-* 项目三： 用Spark处理分析基因表达数据集，研究病人的单个基因的活动表达。任务包括每个癌症类型有特定活跃基因的病人数量等。
+* [项目一](https://github.com/iMonkey0222/School-Projects/tree/master/Cloud%20Computing/A1-MapReduce_Python)：
+	* 用Hadoop MapReduce来分析提供好的来自flickr.com的照片信息数据，获得关于数据集的总结性信息如每个地区的照片数量、Top50的地区、在前50个地区中每个地区最流行的10个标签。
+* [项目二](https://github.com/iMonkey0222/School-Projects/tree/master/Cloud%20Computing/A2-Flink_Java)：
+	* 用Flink处理分析流式细胞的数据集从而研究对于流感的免疫反应，分析任务包括每个研究者的有效的测量值数量、用k-means集群细胞测量值、异常值去除及再次集群。
+* [项目三](https://github.com/iMonkey0222/School-Projects/tree/master/Cloud%20Computing/A3-Spark_Java)： 
+	* 用Spark处理分析基因表达数据集，研究病人的单个基因的活动表达。任务包括每个癌症类型有特定活跃基因的病人数量等。
 
 #### 实现说明
 * 编程语言：Java, Python
@@ -13,17 +16,18 @@
 * Demo所用集群：用Microsoft Azure创建集群运行以上3个项目。
 
 ## 2. 机器学习与数据挖掘项目
-用3种机器学习方法实现Cifar10的图像分类: CNN,Random Forest,Adaboost。
 
-* 项目一：用自定义的朴素贝叶斯实现已给数据的分类 （不允许使用外部library）
-* 项目二：用3种方法实现Cifar10（视觉数据集）的分类
-	* 方法一：Adaboost
-	* 方法一：随机森林
-	* 方法一：卷积神经网络
+* [项目一](https://github.com/iMonkey0222/School-Projects/tree/master/Machine%20Learning%20and%20Data%20Mining/A1-Bayes_python)：
+	* 用自定义的朴素贝叶斯实现已给数据的分类 （不允许使用外部library）
+* [项目二](https://github.com/iMonkey0222/School-Projects/tree/master/Machine%20Learning%20and%20Data%20Mining/A2-Cifar10_python)：
+	* 用3种方法实现[Cifar10](http://www.cs.toronto.edu/~kriz/cifar.html)（图像数据集）的分类
+		* 方法一：Adaboost
+		* 方法一：随机森林
+		* 方法一：卷积神经网络
 
 #### 实现说明
 * 框架使用：Keras
-* 所用library：scikit-learn, matplotlib,numpy 
+* 使用library：scikit-learn, matplotlib,numpy 
 * 编程语言：python3
 * 编程文档：Jupyter Notebook
 
